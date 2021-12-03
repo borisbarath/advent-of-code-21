@@ -1,4 +1,4 @@
-import os, sys
+import os
 
 with open(os.path.join(os.path.dirname(__file__), "input.txt"), 'r') as input:
     commands = [command.split() for command in input.readlines()]
