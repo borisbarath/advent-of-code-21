@@ -1,6 +1,5 @@
 import os
 import re
-import pprint
 
 
 def number_draws(line):
