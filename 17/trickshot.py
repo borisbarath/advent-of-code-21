@@ -3,7 +3,6 @@ import os
 
 def part_1(x_coords, y_coords):
     highest_position = 0
-    highest_x, highest_y = 0, 0
     hitting_positions = set()
     for x_start in range(1, x_coords[1] + 1):
         for y_start in range(1000, y_coords[0] - 1, -1):
@@ -18,8 +17,6 @@ def part_1(x_coords, y_coords):
                     hitting_positions.add((x_start, y_start))
                     if highest_position < highest_try_position:
                         highest_position = highest_try_position
-                        highest_x = x_start,
-                        highest_y = y_start
                     break
                 x += x_speed
                 y += y_speed
